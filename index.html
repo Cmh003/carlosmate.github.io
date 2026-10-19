@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Portfolio de Tu Nombre, desarrollador full stack junior en Madrid.">
+  <title>Carlos Mate Hidalgo · Desarrollador Full Stack Junior</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="menubar">
+  <span class="brand">Carlos Mate Hidalgo</span>
+  <button class="item" data-open="sobre">Sobre mí</button>
+  <button class="item" data-open="proyectos">Proyectos</button>
+  <button class="item" data-open="experiencia">Experiencia</button>
+  <button class="item" data-open="contacto">Contacto</button>
+  <span class="spacer"></span>
+  <span class="status"><b>●</b> Buscando empleo</span>
+  <span class="clock" id="menu-clock"></span>
+</header>
+
+<main class="desktop">
+
+  <div class="widgets">
+    <section class="w span2 profile" aria-label="Presentación">
+      <img class="avatar" src="img/fotoportfolio.jpeg">
+      <div>
+        <h1>Carlos Mate Hidalgo</h1>
+        <p class="role">Desarrollador Full Stack Junior</p>
+        <span class="chip">Disponible para incorporación inmediata</span>
+      </div>
+      <div class="profile-actions">
+        <button class="pill primary" data-open="proyectos">Ver proyectos</button>
+        <button class="pill" data-open="contacto">Contactar</button>
+        <a class="pill" href="https://github.com/">GitHub</a>
+        <a class="pill" href="https://www.linkedin.com/">LinkedIn</a>
+      </div>
+    </section>
+
+    <section class="w clockw" aria-label="Hora local">
+      <p class="w-title">Hora local</p>
+      <div class="big" id="w-clock">--:--</div>
+      <div class="sub" id="w-date"></div>
+      <div class="place">Madrid, España</div>
+      <div class="sub">Presencial · híbrido · remoto</div>
+    </section>
+
+    <section class="w cal" aria-label="Calendario">
+      <div class="month" id="cal-month"></div>
+      <table><thead><tr><th>L</th><th>M</th><th>X</th><th>J</th><th>V</th><th>S</th><th>D</th></tr></thead><tbody id="cal-body"></tbody></table>
+    </section>
+
+    <section class="w span2 gh" aria-label="Actividad en GitHub">
+      <p class="w-title"><span>GitHub · @cmh003</span></p>
+      <div class="count"><b id="gh-total">0</b> contribuciones en el último año</div>
+      <div class="gh-scroll"><div class="gh-grid" id="gh-grid"></div></div>
+    </section>
+
+    <section class="w stackw" aria-label="Stack">
+      <p class="w-title">Stack</p>
+      <ul>
+        <li>JavaScript</li><li>TypeScript</li><li>React</li><li>Node.js</li>
+        <li>Express</li><li>PostgreSQL</li><li>Git</li><li>Docker</li>
+        <li class="learning">Next.js · aprendiendo</li>
+      </ul>
+    </section>
+
+    <section class="w notes" aria-label="Notas">
+      <p class="w-title">Notas</p>
+      <textarea id="notes" aria-label="Deja una nota">Hola, gracias por pasarte. Abre las apps del dock para ver mis proyectos y cómo contactarme.</textarea>
+      <div class="foot"><span id="notes-count">0</span> car.</div>
+    </section>
+
+    <button class="w span2 feat" data-open="proyectos">
+      <span class="w-title" style="margin:0">Proyecto destacado · TFG</span>
+        <span class="name">Yoopo</span>
+          <p>App para opositores a bombero: tests oficiales cronometrados, Pomodoro, registro de marcas físicas y un ranking teórico y físico frente a otros opositores, con red social incluida.</p>
+             <ul class="tags"><li>React</li><li>Node.js</li><li>PostgreSQL</li></ul>
+    </button>
+
+    <section class="w span2" aria-label="Terminal">
+      <p class="w-title">Terminal</p>
+<pre class="term"><span class="p">~ $</span> whoami
+junior full stack developer · Madrid
+<span class="p">~ $</span> cat objetivo.txt
+Unirme a un equipo donde aportar desde el primer sprint
+y seguir aprendiendo de gente con experiencia.
+<span class="p">~ $</span> <span class="c">_</span></pre>
+    </section>
+  </div>
+</main>
+
+<nav class="dock" aria-label="Aplicaciones">
+  <button class="app a1" data-open="sobre" aria-label="Sobre mí"><span class="tip">Sobre mí</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></button>
+  <button class="app a2" data-open="proyectos" aria-label="Proyectos"><span class="tip">Proyectos</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 7h7l2 2h9v10H3z"/></svg></button>
+  <button class="app a3" data-open="experiencia" aria-label="Experiencia"><span class="tip">Experiencia</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V4h6v3"/></svg></button>
+  <button class="app a4" data-open="contacto" aria-label="Contacto"><span class="tip">Contacto</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></button>
+  <a class="app a5" href="https://github.com/" aria-label="GitHub"><span class="tip">GitHub</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></a>
+</nav>
+
+<!-- Contenido de las ventanas: edita aquí tus datos -->
+<template id="tpl-sobre">
+  <h2>Sobre mí</h2>
+  <p>Soy desarrollador full stack junior. Me gusta entender cómo funcionan las cosas por dentro, así que suelo leer la documentación antes que el tutorial. Disfruto especialmente del backend y del diseño de bases de datos.</p>
+  <p>Aprendo rápido, pregunto cuando me atasco y me tomo en serio escribir código que otra persona pueda leer y mantener.</p>
+  <ul class="facts">
+    <li><span>Ubicación</span>Madrid</li>
+    <li><span>Modalidad</span>Presencial, híbrido o remoto</li>
+    <li><span>Disponibilidad</span>Inmediata</li>
+    <li><span>Idiomas</span>Español nativo, inglés B1</li>
+  </ul>
+</template>
+
+<template id="tpl-proyectos">
+<article class="proj">
+  <span class="kind">TFG · app para opositores</span>
+  <h3>Yoopo</h3>
+  <p>App para opositores a bombero que reúne en un solo sitio la preparación teórica, la física y la motivación del día a día.</p>
+  <ul class="feats">
+    <li>Apuntes oficiales con cronómetro que registra el tiempo real de estudio.</li>
+    <li>Tests oficiales con cronómetro que registra el tiempo real de estudio, más un modo examen que simula la prueba.</li>
+    <li>Temporizador Pomodoro integrado para organizar las sesiones de estudio.</li>
+    <li>Registro de marcas físicas y seguimiento del entrenamiento al estilo de Strava.</li>
+    <li>Ranking de resultados teóricos y físicos para que cada opositor conozca su puesto frente al resto.</li>
+    <li>Red social para opositores que fomenta la motivación y la disciplina.</li>
+  </ul>
+  <ul class="tags"><li>React</li><li>Next.js</li><li>PostgreSQL</li></ul>
+</article>
+</template>
+
+  <template id="tpl-experiencia">
+  <h2>Experiencia</h2>
+  <ol class="tl">
+    <li>
+      <span class="when">2026 – Actualidad</span>
+      <div>
+        <h3>Prácticas · Picasso Business Center</h3>
+        <p>Gestión de entornos web y despliegue de servicios con Apache, Nginx y Docker, asegurando la estabilidad y escalabilidad de las aplicaciones en un entorno de producción real.</p>
+        <ul class="tags"><li>Docker</li><li>Nginx</li><li>Apache</li><li>Despliegue</li></ul>
+      </div>
+    </li>
+    <li>
+      <span class="when">2025</span>
+      <div>
+        <h3>Prácticas · Grupo Oro</h3>
+        <p>Primera experiencia profesional como desarrollador. Desarrollo de soluciones web con HTML5, CSS3 y JavaScript, aplicando conocimientos técnicos en un entorno real para optimizar procesos y mejorar la interfaz de usuario.</p>
+        <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+      </div>
+    </li>
+    <li>
+      <span class="when">2022 – Actualidad</span>
+      <div>
+        <h3>Carrefour</h3>
+        <p>Resolución de incidencias en tiempo real, identificación de errores en la interfaz de usuario y reporte de bugs para mejorar las herramientas de gestión interna.</p>
+        <ul class="tags"><li>Resolución de incidencias</li><li>UX</li><li>Reporte de bugs</li></ul>
+      </div>
+    </li>
+  </ol>
+   <h2 style="margin-top: 28px;">Formación</h2>
+  <ol class="tl">
+    <li>
+      <span class="when">2024 – 2026</span>
+      <div>
+        <h3>Grado Superior Desarrollo de Aplicaciones Web</h3>
+        <p>Davante. Proyecto final: Yoopo, una app para opositores a bombero con tests oficiales cronometrados, registro de marcas físicas, ranking entre opositores y red social.</p>
+      </div>
+    </li>
+  </ol>
+</template>
+
+
+<template id="tpl-contacto">
+  <h2>Contacto</h2>
+  <p>Si buscáis un junior con ganas de aprender y aportar, escribidme. Respondo en menos de 24 horas.</p>
+  <div class="copy-row">
+    <span class="email js-email">caarlooss10mh@gmail.com</span>
+    <button class="pill primary js-copy" type="button">Copiar email</button>
+    <span class="ok js-ok" aria-live="polite"></span>
+  </div>
+  <div class="links"><a href="https://www.linkedin.com/in/carlos-mate-hidalgo-68b139395">LinkedIn</a><a href="https://github.com/">GitHub</a></div>
+</template>
+
+<script src="script.js"></script>
+</body>
+</html>
