@@ -4,7 +4,7 @@
   --glass: rgba(246,249,250,.88);
   --glass-strong: rgba(255,255,255,.92);
   --night: #0b1220;
-  --wall-color: #7fb2e5; --wall-img: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Edificio_Metr%C3%B3polis%2C_calle_de_Alcal%C3%A1%2C_Madrid%2C_Espa%C3%B1a%2C_2017-05-18%2C_DD_08.jpg/1920px-Edificio_Metr%C3%B3polis%2C_calle_de_Alcal%C3%A1%2C_Madrid%2C_Espa%C3%B1a%2C_2017-05-18%2C_DD_08.jpg"); --wall-pos: 70% 30%;
+  --wall-color: #7fb2e5; --wall-img: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Edificio_Metr%C3%B3polis%2C_calle_de_Alcal%C3%A1%2C_Madrid%2C_Espa%C3%B1a%2C_2017-05-18%2C_DD_08.jpg/1920px-Edificio_Metr%C3%B3polis%2C_calle_de_Alcal%C3%A1%2C_Madrid%2C_Espa%C3%B1a%2C_2017-05-18%2C_DD_08.jpg"); --wall-pos: 70% 30%; --wall-pos-m: 78% 30%;
   --navy: #111a2e; --navy-2: #1a2540; --navy-fg: #eef2f8; --navy-muted: #a9b4c8; --gold: #f2b632;
   --edge: rgba(20,30,40,.10);
   --fg: #172027; --muted: #5a6670;
@@ -41,7 +41,7 @@
 html, body { min-height: 100%; }
 body {
   margin: 0; color: var(--fg); font: 16px/1.55 var(--ui);
-  background: var(--wall-color) var(--wall-img) var(--wall-pos) / cover no-repeat fixed;
+  background: var(--wall-color);
   overflow-x: hidden;
 }
 button { font: inherit; color: inherit; }
@@ -341,3 +341,15 @@ h2.w-h { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transfor
 @keyframes boot-blink { 50% { opacity: 0; } }
 @keyframes boot-load { 0% { transform: scaleX(.08); } 70% { transform: scaleX(.85); } 100% { transform: scaleX(1); } }
 @keyframes boot-failsafe { to { opacity: 0; visibility: hidden; } }
+
+/* Fondo de escritorio en una capa fija: funciona también en móviles (iOS no admite background-attachment: fixed) */
+body::before {
+  content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background: var(--wall-color) var(--wall-img) var(--wall-pos) / cover no-repeat;
+}
+@media (max-width: 700px) and (orientation: portrait) {
+  :root:not([data-theme="dark"]) body::before { background-position: var(--wall-pos-m); }
+}
+@media (max-width: 700px) and (orientation: portrait) and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) body::before { background-position: var(--wall-pos); }
+}
