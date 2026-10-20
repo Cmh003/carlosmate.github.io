@@ -1,15 +1,21 @@
-# Portfolio
+# carlosmate.info
 
-Portfolio personal con estilo de escritorio de sistema operativo: widgets, dock y ventanas arrastrables.
+Portfolio de Carlos Mate Hidalgo, desarrollador full stack junior en Madrid.
+
+Diseñado como un escritorio de sistema operativo: widgets, dock, ventanas arrastrables y una terminal interactiva. Disponible en español, inglés, francés y alemán, con modo claro y oscuro.
 
 Hecho con HTML, CSS y JavaScript, sin frameworks.
 
 ## Estructura
 
-- `index.html`: estructura y contenido. Los textos de las ventanas están en las etiquetas `<template>`.
-- `styles.css`: diseño, colores (variables en `:root`) y modo oscuro.
-- `script.js`: ventanas, arrastre, reloj, calendario y widgets.
+- `index.html`: estructura de la página.
+- `styles.css`: diseño, colores (variables en `:root`) y modo claro/oscuro.
+- `script.js`: ventanas, terminal, galería, reloj, calendario, idioma y tema.
+- `i18n.js`: todos los textos en los cuatro idiomas.
+- `img/`: foto, capturas de Yoopo y logo de la pantalla de carga.
+- `cv/`: currículum en PDF.
 
-## Ver en local
+## Créditos de las fotos de fondo
 
-Abre `index.html` en el navegador, o usa la extensión Live Server de VS Code.
+- Edificio Metrópolis, Diego Delso, CC BY-SA 4.0 (Wikimedia Commons).
+- Gran Vía de noche, Tim Adams, CC BY 2.0 (Wikimedia Commons).
