@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página no encontrada · Carlos Mate Hidalgo</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px 16px; background: #0b0f13; color: #d7e2e4; font: 16px/1.65 ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; }
+    main { width: min(560px, 100%); }
+    .term { background: #0f1419; border-radius: 14px; padding: 22px 24px; box-shadow: 0 0 0 1px rgba(255,255,255,.06); }
+    .p { color: #6fcac8; } .e { color: #ff8f86; } .c { color: #8a969d; }
+    a { color: #f2b632; }
+    .cur { display: inline-block; width: .6em; height: 1.1em; vertical-align: -.2em; background: #f2b632; }
+    @media (prefers-reduced-motion: no-preference) { .cur { animation: b 1s steps(1) infinite; } @keyframes b { 50% { opacity: 0; } } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="term" role="alert">
+      <div><span class="p">~ $</span> cd <span id="path"></span></div>
+      <div class="e">404: esta página no existe · page not found</div>
+      <div class="c">Puede que el enlace esté mal escrito o que la página ya no exista.</div>
+      <div><span class="p">~ $</span> <a href="/">cd ~ &nbsp;← volver al portfolio</a> <span class="cur"></span></div>
+    </div>
+  </main>
+  <script>document.getElementById('path').textContent = location.pathname;</script>
+</body>
+</html>

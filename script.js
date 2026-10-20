@@ -228,7 +228,14 @@
     tick(); renderCal(); updateThemeBtn();
     if (!typed) termIntro(); else print(L().term.hint, 'c');
   }
-  select.addEventListener('change', function () { store('lang', select.value); applyLang(select.value); });
+  function syncUrl() {
+    var u = new URL(location.href);
+    if (lang === 'es') u.searchParams.delete('lang'); else u.searchParams.set('lang', lang);
+    try { history.replaceState(null, '', u.pathname + u.search + u.hash); } catch (e) {}
+    var can = document.querySelector('link[rel="canonical"]');
+    if (can) can.href = 'https://carlosmate.info/' + (lang === 'es' ? '' : '?lang=' + lang);
+  }
+  select.addEventListener('change', function () { store('lang', select.value); applyLang(select.value); syncUrl(); });
 
   /* ---------- Modo claro / oscuro ---------- */
   var root = document.documentElement, themeBtn = document.getElementById('theme-btn');
@@ -261,7 +268,10 @@
     };
     if (document.readyState === 'complete') hideBoot(); else window.addEventListener('load', hideBoot);
   } else if (boot) { boot.remove(); }
+  // Idioma: el de la URL (?lang=en), si no el elegido antes, y si no español.
+  // El español por defecto hace que Google indexe la página principal en español; cada idioma tiene su URL.
+  var param = (new URLSearchParams(location.search).get('lang') || '').toLowerCase();
   var saved = load('lang');
-  var nav = (navigator.languages && navigator.languages[0] || navigator.language || 'es').slice(0, 2).toLowerCase();
-  applyLang(saved && I[saved] ? saved : (I[nav] ? nav : 'es'));
+  applyLang(I[param] ? param : (saved && I[saved] ? saved : 'es'));
+  if (I[param]) syncUrl();
 })();

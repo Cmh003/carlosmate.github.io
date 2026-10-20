@@ -11,14 +11,137 @@
     try { var th = localStorage.getItem('theme'); if (th === 'light' || th === 'dark') document.documentElement.dataset.theme = th; } catch (e) {}
   </script>
   <title>Carlos Mate Hidalgo · Desarrollador Full Stack Junior</title>
+  <link rel="canonical" href="https://carlosmate.info/">
+  <link rel="alternate" hreflang="es" href="https://carlosmate.info/">
+  <link rel="alternate" hreflang="en" href="https://carlosmate.info/?lang=en">
+  <link rel="alternate" hreflang="fr" href="https://carlosmate.info/?lang=fr">
+  <link rel="alternate" hreflang="de" href="https://carlosmate.info/?lang=de">
+  <link rel="alternate" hreflang="x-default" href="https://carlosmate.info/">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="Carlos Mate Hidalgo">
+  <meta name="keywords" content="Carlos Mate Hidalgo, desarrollador full stack junior, desarrollador web Madrid, junior developer Madrid, React, Node.js, portfolio">
+
+  <!-- Vista previa al compartir (LinkedIn, WhatsApp, X…) -->
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Carlos Mate Hidalgo">
+  <meta property="og:title" content="Carlos Mate Hidalgo · Desarrollador Full Stack Junior">
+  <meta property="og:description" content="Desarrollador full stack junior en Madrid. Proyectos, experiencia y contacto.">
+  <meta property="og:url" content="https://carlosmate.info/">
+  <meta property="og:image" content="https://carlosmate.info/img/og-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Carlos Mate Hidalgo, desarrollador full stack junior en Madrid">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="profile:first_name" content="Carlos">
+  <meta property="profile:last_name" content="Mate Hidalgo">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Carlos Mate Hidalgo · Desarrollador Full Stack Junior">
+  <meta name="twitter:description" content="Desarrollador full stack junior en Madrid. Proyectos, experiencia y contacto.">
+  <meta name="twitter:image" content="https://carlosmate.info/img/og-card.jpg">
+
+  <!-- Datos estructurados para Google -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://carlosmate.info/#carlos",
+      "name": "Carlos Mate Hidalgo",
+      "url": "https://carlosmate.info/",
+      "image": "https://carlosmate.info/img/fotoportfolio.jpeg",
+      "jobTitle": "Desarrollador Full Stack Junior",
+      "description": "Desarrollador full stack junior en Madrid, Técnico Superior en Desarrollo de Aplicaciones Web.",
+      "email": "mailto:carlos@carlosmate.info",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Madrid",
+        "addressCountry": "ES"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Davante Medac"
+      },
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Técnico Superior en Desarrollo de Aplicaciones Web",
+        "credentialCategory": "degree"
+      },
+      "knowsAbout": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "Git",
+        "Docker",
+        "HTML",
+        "CSS",
+        "Nginx",
+        "Apache"
+      ],
+      "knowsLanguage": [
+        "es",
+        "en"
+      ],
+      "sameAs": [
+        "https://github.com/Cmh003",
+        "https://www.linkedin.com/in/carlos-mate-hidalgo-68b139395"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://carlosmate.info/#web",
+      "url": "https://carlosmate.info/",
+      "name": "Carlos Mate Hidalgo · Portfolio",
+      "inLanguage": [
+        "es",
+        "en",
+        "fr",
+        "de"
+      ],
+      "author": {
+        "@id": "https://carlosmate.info/#carlos"
+      }
+    },
+    {
+      "@type": "ProfilePage",
+      "url": "https://carlosmate.info/",
+      "name": "Carlos Mate Hidalgo · Desarrollador Full Stack Junior",
+      "mainEntity": {
+        "@id": "https://carlosmate.info/#carlos"
+      },
+      "isPartOf": {
+        "@id": "https://carlosmate.info/#web"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Yoopo",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Web",
+      "description": "App web para opositores a bombero: tests oficiales cronometrados, Pomodoro, registro de marcas físicas y ranking entre opositores.",
+      "author": {
+        "@id": "https://carlosmate.info/#carlos"
+      },
+      "image": "https://carlosmate.info/img/yoopo-ranking.jpg"
+    }
+  ]
+}
+  </script>
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://upload.wikimedia.org" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
-  <link rel="stylesheet" href="styles.css?v=20261020b">
+  <link rel="stylesheet" href="styles.css?v=20261020c">
 </head>
 <body>
 
@@ -83,7 +206,7 @@
       </div>
       <p class="yoopo-desc" data-i18n="yoopo.desc">App web para opositores a bombero: tests oficiales cronometrados, Pomodoro, registro de marcas físicas y un ranking teórico y físico frente a otros opositores.</p>
       <figure class="shot">
-        <img id="yoopo-main" data-k="ranking" src="img/yoopo-ranking.jpg" alt="Pantalla de ranking de Yoopo con la clasificación de opositores" width="1200" height="750">
+        <img id="yoopo-main" data-k="ranking" decoding="async" src="img/yoopo-ranking.jpg" alt="Pantalla de ranking de Yoopo con la clasificación de opositores" width="1200" height="750">
         <figcaption id="yoopo-cap">Ranking: tu puesto frente a otros opositores, en teoría y en pruebas físicas.</figcaption>
       </figure>
       <div class="thumbs" role="group" aria-label="Pantallas de Yoopo" data-i18n-attr="aria-label:thumbs.aria">
@@ -274,7 +397,7 @@
 
 <p class="credit" data-i18n-html="credit">Fondos: <span class="cr-day"><a href="https://commons.wikimedia.org/wiki/File:Edificio_Metr%C3%B3polis%2C_calle_de_Alcal%C3%A1%2C_Madrid%2C_Espa%C3%B1a%2C_2017-05-18%2C_DD_08.jpg">Edificio Metrópolis</a> (Diego Delso, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>) y <a href="https://commons.wikimedia.org/wiki/File:Madrid_Metropolis-Haus.jpg">Edificio Metrópolis</a> (Flipsoulfly, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>)</span><span class="cr-night"><a href="https://commons.wikimedia.org/wiki/File:Skyline_view_of_Madrid,_Spain_at_night_-_50317258357.jpg">Gran Vía de noche</a> (Tim Adams, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>) y <a href="https://commons.wikimedia.org/wiki/File:Gran_Via,_Madrid,_at_night.jpg">Gran Vía de noche</a> (Leonardo Angelini, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>)</span></p>
 
-<script src="i18n.js?v=20261020b"></script>
-<script src="script.js?v=20261020b"></script>
+<script src="i18n.js?v=20261020c"></script>
+<script src="script.js?v=20261020c"></script>
 </body>
 </html>
