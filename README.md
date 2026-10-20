@@ -18,4 +18,6 @@ Hecho con HTML, CSS y JavaScript, sin frameworks.
 ## Créditos de las fotos de fondo
 
 - Edificio Metrópolis, Diego Delso, CC BY-SA 4.0 (Wikimedia Commons).
+- Edificio Metrópolis (móvil), Flipsoulfly, CC BY-SA 3.0 (Wikimedia Commons).
 - Gran Vía de noche, Tim Adams, CC BY 2.0 (Wikimedia Commons).
+- Gran Vía de noche (móvil), Leonardo Angelini, CC BY 2.0 (Wikimedia Commons).

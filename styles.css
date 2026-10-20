@@ -4,7 +4,7 @@
   --glass: rgba(246,249,250,.88);
   --glass-strong: rgba(255,255,255,.92);
   --night: #0b1220;
-  --wall-color: #7fb2e5; --wall-img: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Edificio_Metr%C3%B3polis%2C_calle_de_Alcal%C3%A1%2C_Madrid%2C_Espa%C3%B1a%2C_2017-05-18%2C_DD_08.jpg/1920px-Edificio_Metr%C3%B3polis%2C_calle_de_Alcal%C3%A1%2C_Madrid%2C_Espa%C3%B1a%2C_2017-05-18%2C_DD_08.jpg"); --wall-pos: 70% 30%; --wall-pos-m: 78% 30%;
+  --wall-color: #7fb2e5; --wall-img: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Edificio_Metr%C3%B3polis%2C_calle_de_Alcal%C3%A1%2C_Madrid%2C_Espa%C3%B1a%2C_2017-05-18%2C_DD_08.jpg/1920px-Edificio_Metr%C3%B3polis%2C_calle_de_Alcal%C3%A1%2C_Madrid%2C_Espa%C3%B1a%2C_2017-05-18%2C_DD_08.jpg"); --wall-pos: 70% 30%; --wall-img-m: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Madrid_Metropolis-Haus.jpg/1920px-Madrid_Metropolis-Haus.jpg"); --wall-pos-m: center top;
   --navy: #111a2e; --navy-2: #1a2540; --navy-fg: #eef2f8; --navy-muted: #a9b4c8; --gold: #f2b632;
   --edge: rgba(20,30,40,.10);
   --fg: #172027; --muted: #5a6670;
@@ -18,7 +18,7 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --wall-a: #16302f; --wall-b: #3a2a1d; --wall-c: #1a2640;
-    --wall-color: #0b1220; --wall-img: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Skyline_view_of_Madrid%2C_Spain_at_night_-_50317258357.jpg/1920px-Skyline_view_of_Madrid%2C_Spain_at_night_-_50317258357.jpg"); --wall-pos: center bottom;
+    --wall-color: #0b1220; --wall-img: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Skyline_view_of_Madrid%2C_Spain_at_night_-_50317258357.jpg/1920px-Skyline_view_of_Madrid%2C_Spain_at_night_-_50317258357.jpg"); --wall-pos: center bottom; --wall-img-m: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Gran_Via%2C_Madrid%2C_at_night.jpg/1920px-Gran_Via%2C_Madrid%2C_at_night.jpg"); --wall-pos-m: center 35%;
     --glass: rgba(20,26,33,.74); --glass-strong: rgba(28,34,41,.92);
     --edge: rgba(255,255,255,.09); --fg: #e9eef0; --muted: #9aa8b0;
     --accent: #6fcac8; --accent-soft: rgba(111,202,200,.14); --warm: #f0a15e;
@@ -29,7 +29,7 @@
 }
 :root[data-theme="dark"] {
   --wall-a: #16302f; --wall-b: #3a2a1d; --wall-c: #1a2640;
-  --wall-color: #0b1220; --wall-img: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Skyline_view_of_Madrid%2C_Spain_at_night_-_50317258357.jpg/1920px-Skyline_view_of_Madrid%2C_Spain_at_night_-_50317258357.jpg"); --wall-pos: center bottom;
+  --wall-color: #0b1220; --wall-img: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Skyline_view_of_Madrid%2C_Spain_at_night_-_50317258357.jpg/1920px-Skyline_view_of_Madrid%2C_Spain_at_night_-_50317258357.jpg"); --wall-pos: center bottom; --wall-img-m: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Gran_Via%2C_Madrid%2C_at_night.jpg/1920px-Gran_Via%2C_Madrid%2C_at_night.jpg"); --wall-pos-m: center 35%;
   --glass: rgba(20,26,33,.74); --glass-strong: rgba(28,34,41,.92);
   --edge: rgba(255,255,255,.09); --fg: #e9eef0; --muted: #9aa8b0;
   --accent: #6fcac8; --accent-soft: rgba(111,202,200,.14); --warm: #f0a15e;
@@ -347,9 +347,7 @@ body::before {
   content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
   background: var(--wall-color) var(--wall-img) var(--wall-pos) / cover no-repeat;
 }
+/* En móvil vertical, fotos verticales con resolución suficiente para que no se pixelen */
 @media (max-width: 700px) and (orientation: portrait) {
-  :root:not([data-theme="dark"]) body::before { background-position: var(--wall-pos-m); }
-}
-@media (max-width: 700px) and (orientation: portrait) and (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) body::before { background-position: var(--wall-pos); }
+  body::before { background-image: var(--wall-img-m); background-position: var(--wall-pos-m); }
 }
