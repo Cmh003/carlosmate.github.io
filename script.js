@@ -159,7 +159,7 @@
     proyectos: function () { print(L().term.opening.proyectos); openWin('proyectos'); },
     yoopo: function () { print(L().term.yoopo); },
     experiencia: function () { print(L().term.opening.experiencia); openWin('experiencia'); },
-    stack: function () { print('JavaScript · TypeScript · React · Node.js · Express · PostgreSQL · Git · Docker'); },
+    stack: function () { print('Frontend: HTML · CSS · JavaScript · TypeScript · React · Angular · Next.js · Tailwind\nBackend:  Node.js · Express · Java · PHP\nDB:       PostgreSQL · MySQL · Firebase\nDevOps:   Docker · Nginx · Apache · Git'); },
     contacto: function () { print(L().term.contact); openWin('contacto'); },
     cv: function () { print(fmt(L().term.cv)); var a = document.createElement('a'); a.href = CV; a.download = ''; document.body.appendChild(a); a.click(); a.remove(); },
     github: function () { print('<a href="https://github.com/Cmh003">github.com/Cmh003</a>'); window.open('https://github.com/Cmh003', '_blank', 'noopener'); },

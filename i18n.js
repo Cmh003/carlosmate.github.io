@@ -91,7 +91,7 @@ window.I18N = {
       experiencia: `<h2>Experiencia</h2>
   <ol class="tl">
     <li>
-      <span class="when">2026 – Actualidad</span>
+      <span class="when">2026</span>
       <div>
         <h3>Prácticas · Picasso Business Center</h3>
         <p>Gestión de entornos web y despliegue de servicios con Apache, Nginx y Docker, asegurando la estabilidad y escalabilidad de las aplicaciones en un entorno de producción real.</p>
@@ -107,11 +107,11 @@ window.I18N = {
       </div>
     </li>
     <li>
-      <span class="when">2022 – Actualidad</span>
+      <span class="when">2022 – 2026</span>
       <div>
-        <h3>Carrefour</h3>
-        <p>Resolución de incidencias en tiempo real, identificación de errores en la interfaz de usuario y reporte de bugs para mejorar las herramientas de gestión interna.</p>
-        <ul class="tags"><li>Resolución de incidencias</li><li>UX</li><li>Reporte de bugs</li></ul>
+        <h3>Atención al cliente · Carrefour Aluche</h3>
+        <p>Resolución de incidencias y reclamaciones en tiempo real, trabajo en equipo y bajo presión. Detección y reporte de errores en las herramientas internas.</p>
+        <ul class="tags"><li>Resolución de incidencias</li><li>Trabajo en equipo</li><li>Reporte de errores</li></ul>
       </div>
     </li>
   </ol>
@@ -120,8 +120,15 @@ window.I18N = {
     <li>
       <span class="when">2024 – 2026</span>
       <div>
-        <h3>Grado Superior Desarrollo de Aplicaciones Web</h3>
-        <p>Davante. Proyecto final: Yoopo, una app para opositores a bombero con tests oficiales cronometrados, registro de marcas físicas, ranking entre opositores y red social.</p>
+        <h3>CFGS Desarrollo de Aplicaciones Web</h3>
+        <p>Davante Medac. Proyecto final: Yoopo, una app para opositores a bombero con tests oficiales cronometrados, registro de marcas físicas, ranking entre opositores y red social.</p>
+      </div>
+    </li>
+    <li>
+      <span class="when">2020 – 2022</span>
+      <div>
+        <h3>Bachillerato</h3>
+        <p>IES Rafael Frühbeck de Burgos.</p>
       </div>
     </li>
   </ol>`,
@@ -227,7 +234,7 @@ window.I18N = {
       experiencia: `<h2>Experience</h2>
   <ol class="tl">
     <li>
-      <span class="when">2026 – Present</span>
+      <span class="when">2026</span>
       <div>
         <h3>Internship · Picasso Business Center</h3>
         <p>Managing web environments and deploying services with Apache, Nginx and Docker, keeping applications stable and scalable in a real production environment.</p>
@@ -243,11 +250,11 @@ window.I18N = {
       </div>
     </li>
     <li>
-      <span class="when">2022 – Present</span>
+      <span class="when">2022 – 2026</span>
       <div>
-        <h3>Carrefour</h3>
-        <p>Resolving incidents in real time, identifying user interface errors and reporting bugs to improve internal management tools.</p>
-        <ul class="tags"><li>Incident resolution</li><li>UX</li><li>Bug reporting</li></ul>
+        <h3>Customer service · Carrefour Aluche</h3>
+        <p>Resolving incidents and complaints in real time, working in a team and under pressure. Spotting and reporting errors in internal tools.</p>
+        <ul class="tags"><li>Incident resolution</li><li>Teamwork</li><li>Bug reporting</li></ul>
       </div>
     </li>
   </ol>
@@ -257,7 +264,14 @@ window.I18N = {
       <span class="when">2024 – 2026</span>
       <div>
         <h3>Higher Technician Diploma in Web Application Development</h3>
-        <p>Davante. Final project: Yoopo, an app for firefighter exam candidates with timed official tests, fitness records, a candidate ranking and a social network.</p>
+        <p>Davante Medac. Final project: Yoopo, an app for firefighter exam candidates with timed official tests, fitness records, a candidate ranking and a social network.</p>
+      </div>
+    </li>
+    <li>
+      <span class="when">2020 – 2022</span>
+      <div>
+        <h3>Spanish Baccalaureate (high school diploma)</h3>
+        <p>IES Rafael Frühbeck de Burgos.</p>
       </div>
     </li>
   </ol>`,
@@ -363,7 +377,7 @@ window.I18N = {
       experiencia: `<h2>Expérience</h2>
   <ol class="tl">
     <li>
-      <span class="when">2026 – Aujourd’hui</span>
+      <span class="when">2026</span>
       <div>
         <h3>Stage · Picasso Business Center</h3>
         <p>Gestion d’environnements web et déploiement de services avec Apache, Nginx et Docker, en garantissant la stabilité et l’évolutivité des applications dans un environnement de production réel.</p>
@@ -379,11 +393,11 @@ window.I18N = {
       </div>
     </li>
     <li>
-      <span class="when">2022 – Aujourd’hui</span>
+      <span class="when">2022 – 2026</span>
       <div>
-        <h3>Carrefour</h3>
-        <p>Résolution d’incidents en temps réel, identification d’erreurs dans l’interface utilisateur et signalement de bugs pour améliorer les outils de gestion interne.</p>
-        <ul class="tags"><li>Résolution d’incidents</li><li>UX</li><li>Signalement de bugs</li></ul>
+        <h3>Service client · Carrefour Aluche</h3>
+        <p>Résolution d’incidents et de réclamations en temps réel, travail en équipe et sous pression. Détection et signalement d’erreurs dans les outils internes.</p>
+        <ul class="tags"><li>Résolution d’incidents</li><li>Travail en équipe</li><li>Signalement de bugs</li></ul>
       </div>
     </li>
   </ol>
@@ -393,7 +407,14 @@ window.I18N = {
       <span class="when">2024 – 2026</span>
       <div>
         <h3>Technicien supérieur en développement d’applications web (DAW)</h3>
-        <p>Davante. Projet de fin d’études : Yoopo, une application pour les candidats au concours de sapeur-pompier avec tests officiels chronométrés, suivi des épreuves physiques, classement des candidats et réseau social.</p>
+        <p>Davante Medac. Projet de fin d’études : Yoopo, une application pour les candidats au concours de sapeur-pompier avec tests officiels chronométrés, suivi des épreuves physiques, classement des candidats et réseau social.</p>
+      </div>
+    </li>
+    <li>
+      <span class="when">2020 – 2022</span>
+      <div>
+        <h3>Baccalauréat espagnol</h3>
+        <p>IES Rafael Frühbeck de Burgos.</p>
       </div>
     </li>
   </ol>`,
@@ -499,7 +520,7 @@ window.I18N = {
       experiencia: `<h2>Erfahrung</h2>
   <ol class="tl">
     <li>
-      <span class="when">2026 – heute</span>
+      <span class="when">2026</span>
       <div>
         <h3>Praktikum · Picasso Business Center</h3>
         <p>Verwaltung von Webumgebungen und Bereitstellung von Diensten mit Apache, Nginx und Docker, um Stabilität und Skalierbarkeit der Anwendungen in einer echten Produktionsumgebung sicherzustellen.</p>
@@ -515,11 +536,11 @@ window.I18N = {
       </div>
     </li>
     <li>
-      <span class="when">2022 – heute</span>
+      <span class="when">2022 – 2026</span>
       <div>
-        <h3>Carrefour</h3>
-        <p>Lösung von Störungen in Echtzeit, Erkennung von Fehlern in der Benutzeroberfläche und Melden von Bugs zur Verbesserung interner Verwaltungstools.</p>
-        <ul class="tags"><li>Störungsbehebung</li><li>UX</li><li>Bug-Reporting</li></ul>
+        <h3>Kundenservice · Carrefour Aluche</h3>
+        <p>Lösung von Störungen und Reklamationen in Echtzeit, Arbeit im Team und unter Druck. Erkennen und Melden von Fehlern in internen Tools.</p>
+        <ul class="tags"><li>Störungsbehebung</li><li>Teamarbeit</li><li>Bug-Reporting</li></ul>
       </div>
     </li>
   </ol>
@@ -529,7 +550,14 @@ window.I18N = {
       <span class="when">2024 – 2026</span>
       <div>
         <h3>Höhere Berufsausbildung in Webanwendungsentwicklung</h3>
-        <p>Davante. Abschlussprojekt: Yoopo, eine App für Feuerwehr-Bewerber mit offiziellen Tests mit Zeitmessung, Erfassung der Sportleistungen, Bewerber-Ranking und sozialem Netzwerk.</p>
+        <p>Davante Medac. Abschlussprojekt: Yoopo, eine App für Feuerwehr-Bewerber mit offiziellen Tests mit Zeitmessung, Erfassung der Sportleistungen, Bewerber-Ranking und sozialem Netzwerk.</p>
+      </div>
+    </li>
+    <li>
+      <span class="when">2020 – 2022</span>
+      <div>
+        <h3>Spanisches Abitur (Bachillerato)</h3>
+        <p>IES Rafael Frühbeck de Burgos.</p>
       </div>
     </li>
   </ol>`,
